@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          uri: https://github.wsgc.com/Logistics-WMOS/configuration
+          default-label: release
+          cloneOnStart: true
+          username: svaradharajan1
+          password: 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
+          ignore-local-ssh-settings: true
+  application:
+      name: logistics-config-server
+server:
+  port: 8888
+
+management:
+  security:
+    enabled: false
